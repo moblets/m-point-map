@@ -13,11 +13,10 @@ module.exports = {
   },
   controller: function(
     $scope,
-    $mMoblet,
-    $mDataLoader,
     $filter,
     $ionicScrollDelegate,
-    $uAlert,
+    $mMoblet,
+    $mDataLoader,
     $timeout,
     $mFrameSize
   ) {
@@ -337,7 +336,7 @@ module.exports = {
       findUserLocation(function(location) {
         userLocation = location;
 
-        var mapDiv = document.getElementById('m-point-map-1');
+        var mapDiv = document.getElementById('m-point-map-' + $scope.moblet.id);
 
         // Set the map options
         var mapOptions = {
