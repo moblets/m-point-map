@@ -15,9 +15,9 @@ module.exports = {
     $scope,
     $filter,
     $ionicScrollDelegate,
-    $mMoblet,
-    $mDataLoader,
     $timeout,
+    $mDataLoader,
+    $mMoblet,
     $mFrameSize
   ) {
     /* ********************************************************************** *
