@@ -286,7 +286,9 @@ module.exports = {
         }, function() {
           browserSupportFlag = false;
           callback(defaultLocation);
-        });
+        },
+        {timeout: 5000, enableHighAccuracy: false}
+      );
       } else {
         browserSupportFlag = false;
         callback(defaultLocation);
